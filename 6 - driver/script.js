@@ -1,17 +1,6 @@
-let language = 'ga';
- switch (language) {
-    case 'de':
-        console.log('God morgen!');
-        break;
-    case 'fr':
-        console.log('Bon après-midi!');
-        break;
-    case 'el':
-        console.log('Καλό απόγευμα!');
-        break;
-    case 'ga':
-        console.log('Tráthnóna maith!');
-        break;
-    default:
-        console.log('Пока нет приветствия на данном языке');
- } 
+const hasLicence = true;
+const age = 18;
+const isDrunk = false;
+
+const canDrive = (hasLicence === true && age >= 18 && isDrunk === false) ? 'может' : 'не может';
+console.log(canDrive);
