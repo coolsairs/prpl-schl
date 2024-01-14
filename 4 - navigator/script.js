@@ -7,9 +7,11 @@
 
 // console.log(wayLength);
 
-const wayLength = (adressLat, adressLong, positionLat, positionLong ) => {
-    const pathCalculation = Math.sqrt(((adressLat - positionLat) ** 2) + (adressLong - positionLong) ** 2);
-    return pathCalculation;
-}
+// const wayLength = (adressLat, adressLong, positionLat, positionLong ) => {
+//     const pathCalculation = Math.sqrt(((adressLat - positionLat) ** 2) + (adressLong - positionLong) ** 2);
+//     return pathCalculation;
+// }
 
+
+const wayLength = (adressLat, adressLong, positionLat, positionLong ) => { return Math.sqrt(((adressLat - positionLat) ** 2) + (adressLong - positionLong) ** 2); }
 console.log(wayLength(111, 122, 11, 132));
